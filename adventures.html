@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Adventure - Nomad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/images/logo.png" alt="Nomad Logo" class="logo">
+            <span class="logo-text">Nomad</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="index.html#companionship">Companionship</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="how-nomad-works.html">How NOMAD Works</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Video Background -->
+        <div class="video-background">
+            <video id="background-video" autoplay muted loop>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Plan Your Adventure Section -->
+        <section id="plan-adventure">
+            <h2>Plan Your Adventure</h2>
+            <p>Select the date of your trip and the destination you wish to visit. We'll help you find others to join your adventure.</p>
+            <form id="adventure-form">
+                <label for="travel-date">Date of Travel:</label>
+                <input type="date" id="travel-date" name="travel-date" required>
+                
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+                
+                <button type="submit">Find Companions</button>
+            </form>
+            <div id="customer-list" style="display: none;">
+                <h3>Potential Companions:</h3>
+                <ul id="customer-list-ul"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nomad</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
